@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> IT Service</title>
+</head>
+<style>
+    .head{
+        background-image: url("backphoto.avif");
+        background-repeat: no-repeat;
+        height: 85vh;
+        background-position: center;
+        background-size: cover;
+    }
+
+    div {
+        background-color: transparent;
+    }
+
+    li,
+    a {
+        color: blanchedalmond;
+        text-decoration: none;
+        font-size: 23px;
+    }
+
+    a:hover {
+        color: orangered;
+        text-decoration: underline;
+    }
+
+    div {
+        display: flex;
+
+    }
+
+    ul,
+    li {
+        display: flex;
+    }
+
+    .inp {
+        width: 260px;
+        height: 35px;
+        position: relative;
+        top: 10px;
+        border: 3px solid orange;
+        border-radius: 18px;
+        background-color: black;
+        color: white;
+    }
+
+    .btn {
+        width: 100px;
+        height: 40px;
+        position: relative;
+        border-radius: 9px;
+        background-color: white;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: orangered;
+    }
+
+    .box {
+        border: 2px solid orange;
+        width: 400px;
+        margin: 4px;
+        height: 400px;
+        position: relative;
+        top: 900px;
+        right: 300px;
+        border-radius: 15px;
+        z-index: 0;
+        background-color: orangered;
+
+    }
+
+    .box1 {
+        border: 2px solid orange;
+        width: 400px;
+        margin: 4px;
+        height: 400px;
+        position: relative;
+        top: 900px;
+        right: 300px;
+        border-radius: 15px;
+        background-color: yellow;
+        z-index: 0;
+    }
+
+    .box2 {
+        border: 2px solid orange;
+        width: 400px;
+        margin: 4px;
+        height: 400px;
+        position: relative;
+        top: 900px;
+        right: 300px;
+        border-radius: 15px;
+        background-color: rgb(200, 169, 229);
+        z-index: 0;
+    }
+    img {
+        height: 200px;
+        width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        z-index: 2;
+
+    }
+
+    .txt {
+        z-index: 1;
+        position: absolute;
+        bottom: 2px;
+        text-align: center;
+    }
+    input{
+        border: 2px solid brown;
+    }
+    .second{
+
+    }
+    .mainbox{
+        
+    }
+</style>
+
+<body>
+    <div class="head">
+        <div class="first">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a> &nbsp; &nbsp; &nbsp; &nbsp;</li>
+                    <li><a href="#home">About</a>&nbsp; &nbsp; &nbsp; &nbsp;</li>
+                    <li><a href="#home">Services</a> &nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li><a href="#home">Contract</a> &nbsp;&nbsp;&nbsp;&nbsp;</li>
+                </ul>
+            </nav>
+            <input class=" inp" type="text" placeholder="Search.................">
+            <button class="btn"> Search</button>
+        
+    </div>
+    <ma class="mainbox">
+    <div class="box"><img src="css-tutorial.png">
+        <p class=" txt">JavaScript (JS) is a cross-platform, object-oriented programming language used by
+            developers to make
+            web pages interactive. It allows developers to create dynamically updating content, use animations
+        </p>
+    </div>
+    <div class="box1"> <img src="js.png">
+        <p class="txt">What is the description of MongoDB?
+            MongoDB is a non-relational document database that provides support for JSON-like storage.</p>
+    </div>
+    <div class="box2"><img src="css-tutorial.png">
+        <p class="txt">What is the description of CSS?
+            Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a
+            document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). </p>
+    
+</div>
+</ma>
+    <!-- <div class="form">
+        <caption>Login Form</caption>
+        <form class="form">
+            <input type="text" placeholder="Email Address">
+            <input type="text" placeholder="password">
+            <button>Login</button>
+            <p>don't worry<span>Forgot password</span></p>
+        </form>
+    </div> -->
+</body>
+
+</html>

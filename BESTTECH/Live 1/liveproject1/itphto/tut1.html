@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestTech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+</head>
+<style>
+    .head {
+        background-image: url("backphoto.avif");
+        width: 100%;
+        height: 90vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.9;
+        filter: brightness(90%);
+
+    }
+    .navv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+     .uli li {
+        display: inline-block;
+        margin-right: 100px;
+        font-size: 25px;
+        font-family: serif;
+
+    } 
+
+    .uli a {
+        text-decoration: none;
+        color: white;
+
+    }
+
+    .uli a:hover {
+        color: orangered;
+        text-decoration: underline;
+    }
+
+    .spn {
+        margin-left: 70px;
+        letter-spacing: 10px;
+        color: white;
+        font-weight: 300;
+    }
+
+    .first {
+
+        text-align: center;
+        position: relative;
+        top: 30%;
+        font-size: 20px;
+    }
+
+    .c1 {
+        width: 200px;
+        height: 40px;
+        border: 1px solid rgb(8, 163, 73);
+        border-radius: 16px;
+        font-size: 15px;
+        letter-spacing: 4px;
+        margin: 4px;
+    }
+
+    .c11,
+    .c12 {
+        background-color: black;
+        color: white;
+    }
+
+    .c11:hover {
+        background-color: rgba(6, 117, 150, 0.933);
+        color: white;
+    }
+
+    .c12:hover {
+        background-color: rgba(6, 117, 150, 0.933);
+        color: white;
+
+    }
+
+    .h {
+        color: white;
+
+    }
+
+    .p {
+        color: rgb(251, 249, 244);
+        font-family: serif;
+    }
+
+    .cntr h2 {
+        /* background-image: url("bg1.avif"); */
+        /* background-repeat: no-repeat;
+           background-size: cover; */
+        /* opacity:0.9;
+           filter:brightness(90%);
+               block-size: fit-content; */
+
+
+        text-align: center;
+        font-size: larger;
+        color: black;
+
+    }
+
+
+    .f {
+        width: 100%;
+        height: auto;
+        display: flex;
+        background-image: url("5.avif");
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        background-position: center;
+        /* background-image: url("bg1.avif"); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: brightness(90%);
+
+    }
+
+    .boox {
+        width: 400px;
+        height: 300px;
+        border: 2px solid white;
+        margin: 20px;
+        text-align: left;
+        padding-left: 20px;
+        color: white;
+    }
+
+    .boox:hover {
+        background-color: yellow;
+        color: black;
+        box-shadow: 4px 4px 6px white;
+        filter: 4px 4px 4px black;
+    }
+
+    .banr {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .About {
+        /* z-index: -1px; */
+        width: 50%;
+        border: 2px solid black;
+        background-color: black;
+        color: white;
+        margin-top: 10px; 
+        overflow: hidden;
+        box-shadow: 2px 0px 10px 1px black;
+        text-align: center;
+
+    }
+
+    /* .c{
+            width:90%;
+        } */
+    .Abouts {
+        width: 60%;
+        border: 2px solid black;
+        overflow: hidden;
+        box-shadow: 2px 0px 10px 1px black;
+        /* padding-left: 100px; */
+    }
+
+    .abt {
+        align-items: flex-start;
+        text-align: start;
+    }
+
+    /* .pp{
+            width: 120px;
+        }
+        .hh{
+            width:360px;
+           
+            flex-wrap: wrap;
+        } */
+
+    .btn {
+        width: 170px;
+        height: 35px;
+        text-align: center;
+        color: white;
+        background-color: transparent;
+        border: 1px solid white;
+    }
+
+    .but {
+        border: 2px solid black;
+        color: black;
+    }
+
+    .imgb {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sec h2 {
+/* z-index: index 2px; */
+        text-align: center;
+    }
+
+    .textc {
+        font-size: 20px;
+        padding-left: 90px;
+        padding-top: 10%;
+        margin-top: auto;
+        text-align: inherit;
+        width: 50%;
+
+    }
+
+    .second {
+        display: table-caption;
+    }
+
+    .ftr {
+        display: flex;
+        text-decoration: none;
+
+    }
+
+    li {
+        list-style: none;
+    }
+
+    li a {
+        text-decoration: none;
+
+    }
+    .first2 {
+        width: 20%;
+        align-items: inherit;
+        cursor: pointer;
+    }
+    .second{
+        padding: 0px;
+    }
+
+    .second2 {
+      
+    }
+    .ftr h4 {
+        text-decoration: underline;
+        font-size: 25px;
+    }
+    .ftr{
+        height: 100%;
+        color: white;
+        background-color: black;
+         justify-content: space-between;
+    }
+.first2{
+    margin-top: 20px;
+    padding-left:90px;
+}
+    .contact{
+       padding-right:200px ;
+    }
+     .h4{
+        text-align: center;
+        font-size:35px;
+     }
+     footer li a{
+        color: white;
+     }
+     .secc{
+       padding: 0%;
+     margin-top: 20px;
+     display: flex;
+     }
+     .secc li{
+        list-style: none;
+     }
+.secc li a{
+ display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius:4px;
+background:red;
+display: flex; 
+}
+
+.classs{
+    padding: 0px;
+}
+.info{
+    padding: 0px;
+}
+.back{
+    background-color: black;
+   color: white;
+}
+.hhhh{
+    text-align: center;
+}
+@media(max-width:941px){
+    .textc{
+        padding-left: 0%;
+    }
+    .navv{
+        flex-direction: column;
+    }
+    .f{
+        justify-content: center;
+    }
+    .contact{
+        padding: 0%;
+    }
+    .ftr{
+        display: block;
+    }
+    .banr{
+     display:block;
+    }
+    .About{
+        width: 100%;
+    }
+    .Abouts{
+        width: 100%;
+    }
+    .contact{
+        padding-right: 0px;
+    }
+}
+@media(max-width:498px){
+    .head{
+        height: 100vh;
+    }
+    .secc{
+        display: block;
+    }
+    .secc li {
+ margin: 10px;
+    }
+    .first{
+        top: 5%;
+    }
+    .btn{
+        width: 50px;
+    }
+    
+
+}
+
+/* @media (max-width:799px){
+}
+#navbar{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    position: fixed;
+    top: 0;
+    right:-300px;           
+    height:100vh;
+    width: 300px;
+    background-color: #E3E6F3;
+    box-shadow:0 40px 60px rgba(0,0,0,0.1);
+    padding:80px 0 0 10px;
+    transition: 00.2s ease;
+   
+}
+#navbar.active{
+    right:0px;
+}
+#navbar li{
+    margin-bottom: 25px;
+}
+#mobile{
+display:flex;
+align-items: center;
+}
+#mobile i{
+color: #1a1a1a;
+padding-left: 20px;
+font-size: 24px;
+}
+#close{
+display:initial;
+position: absolute;
+top:24px;
+left:30px;
+color:#222;
+font-size: 24px;
+}
+#bag{
+display: none;
+} */
+
+</style>
+</head>
+
+<body>
+    <div class="head">
+        <nav class="navv">
+            <strong class="spn">|| 𐌁𐌄𐌔𐌕𐌕𐌄𐌂𐋅 ||</strong>
+            <div class="divs" id="navbar">
+                <ul class="uli">
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">Feature</a></li>
+                    <li> <a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                   
+                    <!-- <li id="bag"><a href="#"><i class="far fa-shopping-bag"></i></a></li>
+                    <a href="#" id="close"><i class="far fa-times"></i></a> <li> <a href="#">Help</a></li> -->
+                </ul>
+            </div>
+            <!-- <div id="mobile">
+                <a href="#"><i class="far fa-shopping-bag"></i></a>
+                <i id="bar" class="fas fa-outdent"></i>
+            </div> -->
+        </nav>
+        <div class="first">
+            <h1 class="h">DESIGN YOUR WEBSITE</h1>
+            <p class="p"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, eligendi.</p>
+            <div>
+                <button class="c1 c11"> Watch More</button>
+                <button class="c1 c12">Subscribe</button>
+            </div>
+        </div>
+    </div>
+    <section id="ctnnn" class="cntr">
+        <h2>FEATURED WORKS</h2>
+        <div class="f">
+            <div class="boox">
+                <h3>It services provided WEBSITE</h3>
+                <p>webpage deisign</p>
+            </div>
+            <div class="boox">
+                <h3>It services provided WEBSITE</h3>
+                <p>webpage deisign</p>
+
+            </div>
+            <div class="boox">
+                <h3>It services provided WEBSITE</h3>
+                <p>webpage deisign</p>
+
+            </div>
+            <div class="boox">
+                <h3>It services provided WEBSITE</h3>
+                <p>webpage deisign</p>
+            </div>
+            <div class="boox">
+                <h3>It services provided WEBSITE </h3>
+                <p>webpage deisign</p>
+            </div>
+            <div class="boox">
+                <h3>It services provided</h3>
+                <p>webpage deisign</p>
+            </div>
+        </div>
+    </section>
+    <section class=" sec">
+       
+        <div class="banr">
+            <div class="About abt">
+                <h2>ABOUT</h2>
+                <div class=" textc">
+                    <p class="">What we DO
+                    </p>
+                    <h1>We Full Fill user reqriment</h1>
+                    <p>Lorem ipsum dolor sit amet dipisicing dsdjkfsnlskd djdklfj
+                        eummolestias ipsa, possimus ab exercitationem impedit suscipit ex quide
+                        necessitatibus ex iste. Laborum magni ab in quos enim.aksj sjddks djdkd
+                        sdjhdk hdskhjf kdjfudhd bfhks bhfkjfkjnlsdkns </p>
+                    <button class="btn">READ MORE</button>
+                </div>
+            </div>
+            <div class="About ab"><img class="imgb" src="bnrr.avif"> </div>
+        </div>
+
+    </section>
+    <section class=" sec sec1">
+        <div class="banr">
+            <div class="Abouts ">
+                <img class="imgb" src="bnrrr.avif">
+            </div>
+
+            <div class="Abouts abt">
+                <div class=" textc">
+                    <p class="pp">What we DO
+                    </p>
+                    <h1 class="hh">We Full Fill user reqriment</h1>
+                    <p class="">Lorem adipisicing dsdjkfsnlskd djdklfj
+                        eummolestias ipsa, possimus ab suscipit ex quide
+                        necessitatibus ex iste. Laborum magni ab in quos enim.aksj sjddks djdkd
+                        sdjhdk hdskhjf kdjfudhd bfhks bhfkjfkjnlsdkns </p>
+                    <button class="btn but">READ MORE</button>
+                </div>
+            </div>
+    </section>
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-4">ijgij</div>
+            <div class="col-4">dkgd</div>
+            <div class="col-4">drjtg</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">ijgij</div>
+                <div class="col-4">dkgd</div>
+                <div class="col-4">drjtg</div>
+            </div>
+        </div> -->
+    <!-- <footer>
+        <div class="ftr">
+              <h4 class="h4">Contact</h4>
+            
+            <div class="first2">
+                <h4>about Us</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, quis mollitia. Consectetur
+                    corporis, quos quibusdam dignissimos dolor ut laboriosam exercitationem ab dolorem nostrum fugit,
+                    odio praesentium id quo, minima placeat.</p>
+                    <ul class="secc">
+                <li><a href="#"><i class="fa fa-address-book a" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram a" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter a" aria-hidden="true"></i></a></li>
+               <li><a href="#"><i class="fa fa-whatsapp a" aria-hidden="true"></i></a></li> 
+            </ul>
+            </div>
+            <div class="second">
+                 <div class="add"> 
+                <div class="second2">
+                    <h4>Quick Links</h4>
+                    <ul class=" classs">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">FAQ </a></li>
+                        <li><a href="#">Privacy Policy </a></li>
+                        <li><a href="#"> Help</a></li>
+                        <li><a href="#"> Term& Consitions</a></li>
+                        <li><a href="#"> Contact </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact">
+                <h4>Contact</h4>
+                <ul class="info">
+                    <li>
+                        <span> <i class="fa fa-phone" aria-hidden="true"></i></span>
+                      <span>bhoorbaral meerut<br> uttar pardesh</span>
+                    </li>
+                    <br>
+                <li>
+                <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+               <span> +1234567889</span><br>
+               &nbsp;&nbsp;<a href="tel:123456789">+81234567889</a> 
+               
+                </li>
+                <br>
+                <li>
+                    <span><i class="fa fa-comments" aria-hidden="true"></i></span>
+                    <span>akashsharma88917@gmail.com</span>
+                </li>
+            </ul>
+             </div> 
+            </div>
+        </div>
+    </footer> -->
+    <!-- <script src="scipt.js"></script> -->
+    <footer>
+        <div class="container-fluid back">
+            <div>
+                <h1 class="hhhh"> contact</h1>
+            </div>
+           
+            <div class="row">
+                <div class="col">
+                    <h4>Contact</h4>
+                <div>
+                    <h4>about Us</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, quis mollitia. Consectetur
+                        corporis, quos quibusdam dignissimos dolor ut laboriosam exercitationem ab dolorem nostrum fugit,
+                        odio praesentium id quo, minima placeat.</p>
+                        <ul class="secc">
+                    <li><a href="#"><i class="fa fa-address-book abc" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram abc" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter abc" aria-hidden="true"></i></a></li>
+                   <li><a href="#"><i class="fa fa-whatsapp abc" aria-hidden="true"></i></a></li> 
+                </ul>
+                </div>
+                </div>
+                
+                <div class="col">
+                    <div>
+                    <h4>Quick Links</h4>
+                    <ul class=" classs">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">FAQ </a></li>
+                        <li><a href="#">Privacy Policy </a></li>
+                        <li><a href="#"> Help</a></li>
+                        <li><a href="#"> Term& Consitions</a></li>
+                        <li><a href="#"> Contact </a></li>
+                    </ul>
+                </div></div>
+                <div class="col">
+                     <div>
+                    <h4>Contact</h4>
+                    <ul class="info">
+                        <li>
+                            <span> <i class="fa fa-phone" aria-hidden="true"></i></span>
+                          <span>bhoorbaral meerut<br> uttar pardesh</span>
+                        </li>
+                        <br>
+                    <li>
+                    <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                   <span> +1234567889</span><br>
+                   &nbsp;&nbsp;<a href="tel:123456789">+81234567889</a> 
+                   
+                    </li>
+                    <br>
+                    <li>
+                        <span><i class="fa fa-comments" aria-hidden="true"></i></span>
+                        <p>akashsharma88917@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+                </div>
+            </div>
+            
+    </footer>
+</body>
+</html>
